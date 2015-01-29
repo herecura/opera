@@ -1,22 +1,11 @@
 pkgbase = opera
 	pkgdesc = A fast and secure web browser and Internet suite.
 	pkgver = 27.0.1689.54
-	pkgrel = 1
+	pkgrel = 2
 	url = http://www.opera.com/
 	install = opera.install
 	arch = x86_64
 	license = custom:opera
-	options = !strip
-	options = !zipman
-	backup = etc/opera/default
-	source = http://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_27.0.1689.54_amd64.deb
-	source = opera
-	source = default
-	sha256sums = 0dae4e3a0cf347a4a37f6d3f65ad6409d91b435dcdbad19cf47e2c9d31a13a1e
-	sha256sums = 508512464e24126fddfb2c41a1e2e86624bdb0c0748084b6a922573b6cf6b9c5
-	sha256sums = 4913d97dec0ddc99d1e089b029b9123c2c86b7c88d631c4d1111b119b09da027
-
-pkgname = opera
 	depends = gtk2
 	depends = desktop-file-utils
 	depends = shared-mime-info
@@ -29,5 +18,16 @@ pkgname = opera
 	depends = freetype2
 	depends = ttf-font
 	optdepends = curl: opera crash reporter and autoupdate checker
-	optdepends = ffmpeg: playback of not really open formats
+	optdepends = ffmpeg: playback of proprietary formats
+	options = !strip
+	options = !zipman
+	backup = etc/opera/default
+	source = http://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_27.0.1689.54_amd64.deb
+	source = opera
+	source = default
+	sha256sums = 0dae4e3a0cf347a4a37f6d3f65ad6409d91b435dcdbad19cf47e2c9d31a13a1e
+	sha256sums = 508512464e24126fddfb2c41a1e2e86624bdb0c0748084b6a922573b6cf6b9c5
+	sha256sums = 4913d97dec0ddc99d1e089b029b9123c2c86b7c88d631c4d1111b119b09da027
+
+pkgname = opera
 
