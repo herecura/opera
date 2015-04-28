@@ -1,6 +1,6 @@
 pkgbase = opera
 	pkgdesc = A fast and secure web browser and Internet suite.
-	pkgver = 28.0.1750.51
+	pkgver = 29.0.1795.47
 	pkgrel = 1
 	url = http://www.opera.com/
 	install = opera.install
@@ -22,12 +22,12 @@ pkgbase = opera
 	options = !strip
 	options = !zipman
 	backup = etc/opera/default
-	source = http://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_28.0.1750.51_amd64.deb
 	source = opera
 	source = default
-	sha256sums = 2c73cf04b70fe95e674a16c98727ba2a9a6b1fbd8bfb5df3a3ba911330c69543
 	sha256sums = 508512464e24126fddfb2c41a1e2e86624bdb0c0748084b6a922573b6cf6b9c5
 	sha256sums = 4913d97dec0ddc99d1e089b029b9123c2c86b7c88d631c4d1111b119b09da027
+	source_x86_64 = http://get.geo.opera.com/pub/opera/desktop/29.0.1795.47/linux/opera-stable_29.0.1795.47_amd64.deb
+	sha256sums_x86_64 = 7183b0741844b24c454d0d40f34ef185474296af579470b03a7bc82a64c320b9
 
 pkgname = opera
 
