@@ -11,7 +11,7 @@
 
 pkgname=opera
 pkgver=30.0.1835.88
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and secure web browser and Internet suite."
 url="http://www.opera.com/"
 install=${pkgname}.install
