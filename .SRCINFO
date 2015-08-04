@@ -1,6 +1,6 @@
 pkgbase = opera
-	pkgdesc = A fast and secure web browser and Internet suite.
-	pkgver = 30.0.1835.125
+	pkgdesc = A fast and secure web browser
+	pkgver = 31.0.1889.99
 	pkgrel = 1
 	url = http://www.opera.com/
 	install = opera.install
@@ -12,13 +12,11 @@ pkgbase = opera
 	depends = libxtst
 	depends = gconf
 	depends = libxss
-	depends = gcc-libs
 	depends = alsa-lib
 	depends = nss
-	depends = freetype2
 	depends = ttf-font
 	optdepends = curl: opera crash reporter and autoupdate checker
-	optdepends = ffmpeg: playback of proprietary formats
+	optdepends = libnotify: native desktop notifications
 	options = !strip
 	options = !zipman
 	backup = etc/opera/default
@@ -26,8 +24,8 @@ pkgbase = opera
 	source = default
 	sha256sums = 508512464e24126fddfb2c41a1e2e86624bdb0c0748084b6a922573b6cf6b9c5
 	sha256sums = 4913d97dec0ddc99d1e089b029b9123c2c86b7c88d631c4d1111b119b09da027
-	source_x86_64 = http://get.geo.opera.com/pub/opera/desktop/30.0.1835.125/linux/opera-stable_30.0.1835.125_amd64.deb
-	sha256sums_x86_64 = 762d1bfb8575c66d9528ebe77dd83c264c59598b9f972143f8c8d18aa9195a45
+	source_x86_64 = http://get.geo.opera.com/pub/opera/desktop/31.0.1889.99/linux/opera-stable_31.0.1889.99_amd64.deb
+	sha256sums_x86_64 = 51dc961957cd1b7169c6922f5433feee2320300f7c52f96bf349fa478b2b9745
 
 pkgname = opera
 
