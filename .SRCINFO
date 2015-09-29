@@ -1,6 +1,6 @@
 pkgbase = opera
 	pkgdesc = A fast and secure web browser
-	pkgver = 32.0.1948.25
+	pkgver = 32.0.1948.69
 	pkgrel = 1
 	url = http://www.opera.com/
 	install = opera.install
@@ -24,8 +24,8 @@ pkgbase = opera
 	source = default
 	sha256sums = 508512464e24126fddfb2c41a1e2e86624bdb0c0748084b6a922573b6cf6b9c5
 	sha256sums = 4913d97dec0ddc99d1e089b029b9123c2c86b7c88d631c4d1111b119b09da027
-	source_x86_64 = http://get.geo.opera.com/pub/opera/desktop/32.0.1948.25/linux/opera-stable_32.0.1948.25_amd64.deb
-	sha256sums_x86_64 = 4157732e784d13128a991b640c2d549aa9597d9f6900fc30c768ad17e9e1a2c1
+	source_x86_64 = http://get.geo.opera.com/pub/opera/desktop/32.0.1948.69/linux/opera-stable_32.0.1948.69_amd64.deb
+	sha256sums_x86_64 = b2178af796a9b5adf3a8d6f17391ade03efc6ad3c0f9d853f1e9766735eba91b
 
 pkgname = opera
 
