@@ -11,7 +11,7 @@
 
 pkgname=opera
 pkgver=41.0.2353.69
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and secure web browser"
 url="http://www.opera.com/"
 options=(!strip !zipman)
@@ -22,6 +22,7 @@ depends=('gtk2' 'desktop-file-utils' 'shared-mime-info' 'libxtst' 'gconf' 'libxs
 optdepends=(
     'curl: opera crash reporter and autoupdate checker'
     'opera-ffmpeg-codecs: playback of proprietary video/audio'
+    'upower: opera battery save'
 )
 source=(
     "opera"
