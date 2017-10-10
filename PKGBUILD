@@ -11,7 +11,7 @@
 
 pkgname=opera
 pkgver=48.0.2685.35
-pkgrel=2
+pkgrel=1
 pkgdesc="A fast and secure web browser"
 url="http://www.opera.com/"
 options=(!strip !zipman)
@@ -59,11 +59,6 @@ package() {
     # install opera wrapper
     rm "$pkgdir/usr/bin/$pkgname"
     install -Dm755 "$srcdir/opera" "$pkgdir/usr/bin/$pkgname"
-
-    # remove opera_autoupdate
-    rm "$pkgdir/usr/lib/$pkgname"/opera_autoupdate*
-    printf "#!/bin/sh\nexit 0" > "$pkgdir/usr/lib/$pkgname/opera_autoupdate"
-    chmod +x "$pkgdir/usr/lib/$pkgname/opera_autoupdate"
 
     # license
     install -Dm644 \
