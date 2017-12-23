@@ -11,7 +11,7 @@
 
 pkgname=opera
 pkgver=49.0.2725.64
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and secure web browser"
 url="http://www.opera.com/"
 options=(!strip !zipman)
@@ -25,7 +25,7 @@ optdepends=(
     'upower: opera battery save'
 )
 source=(
-    "http://get.geo.opera.com/pub/${pkgname}/desktop/${pkgver}/linux/${pkgname}-stable_${pkgver}_amd64.deb"
+    "https://get.geo.opera.com/pub/${pkgname}/desktop/${pkgver}/linux/${pkgname}-stable_${pkgver}_amd64.deb"
     "opera"
     "default"
     'eula.html'
