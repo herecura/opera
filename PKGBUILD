@@ -56,9 +56,6 @@ package() {
     )
     rm -rf "$pkgdir/usr/lib/"*-linux-gnu
 
-    # suid opera_sandbox
-    chmod 4755 "$pkgdir/usr/lib/$pkgname/opera_sandbox"
-
     # install default options
     install -Dm644 "$srcdir/default" "$pkgdir/etc/$pkgname/default"
 
