@@ -10,7 +10,7 @@
 
 pkgname=opera
 pkgver=68.0.3618.125
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast and secure web browser"
 url="https://www.opera.com/"
 options=(!strip !zipman)
@@ -18,7 +18,6 @@ license=('custom:opera')
 backup=("etc/$pkgname/default")
 arch=('x86_64')
 depends=('gtk3' 'alsa-lib' 'libnotify' 'curl' 'nss' 'libcups' 'libxss' 'ttf-font' 'desktop-file-utils' 'shared-mime-info' 'hicolor-icon-theme')
-makedepends=('imagemagick')
 optdepends=(
     'opera-ffmpeg-codecs: playback of proprietary video/audio'
     'pepper-flash: flash support'
@@ -65,15 +64,6 @@ package() {
     # install opera wrapper
     rm "$pkgdir/usr/bin/$pkgname"
     install -Dm755 "$srcdir/opera" "$pkgdir/usr/bin/$pkgname"
-
-    # fix opera icons
-    for res in 16 22 24 32 48 64 128; do
-        rm -rf "$pkgdir/usr/share/icons/hicolor/${res}x${res}"
-        install -dm755 "$pkgdir/usr/share/icons/hicolor/${res}x${res}/apps"
-        convert "$pkgdir/usr/share/icons/hicolor/256x256/apps/opera.png" \
-            -resize ${res}x${res} \
-            "$pkgdir/usr/share/icons/hicolor/${res}x${res}/apps/opera.png"
-    done
 
     # license
     install -Dm644 \
